@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Wheels</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div id="createWheelForm">
+            <h1>Create Your Wheels</h1>
+            <input type="text" id="categoryInput" placeholder="Enter Category">
+            <div id="choicesContainer"></div>
+            <button id="addChoiceButton">Add Choice</button>
+            <label for="wheelColorPicker">Choose Wheel Color:</label>
+            <input type="color" id="wheelColorPicker" value="#007BFF">
+            <button id="createWheelButton">Create Wheel</button>
+        </div>
+        <div id="wheelsContainer"></div>
+        <div id="resultsContainer"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
