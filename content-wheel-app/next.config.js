@@ -1,14 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // Enables static file export
-  trailingSlash: true, // Required for static hosting
-  assetPrefix: '/content_wheel', 
-  basePath: '/content_wheel', // Leave empty for local testing, set for GitHub Pages later
+  output: 'export',  // This ensures you're exporting to static HTML
+  trailingSlash: true, // Ensures URLs end with a slash for proper static serving
+  assetPrefix: '/content_wheel', // Ensures static assets are linked correctly
+  basePath: '/content_wheel', // The base path for GitHub Pages (repo name)
   images: {
-    unoptimized: true, // Required for static hosting
+    unoptimized: true, // Necessary for static hosting
   },
   reactStrictMode: true,
 };
 
 module.exports = nextConfig;
-
